@@ -13,14 +13,11 @@
 
 ## besag model:
 ## response variable = CPUE, family=gamma
-## this model has spatial spatial structure and separated temporal trend
+## this model has a spatial structure and separated temporal trend
 ## spatial effect (polyID) is modelled as besag effect
 ## temporal effect (psyearID) is modelled as a RW2 effect
 
 ## assumptions:
-## This model assumes that the variation in each county is the sum of the spatial 
-## random effect and the overall temporal trend, i.e., there is no way to account 
-## for county-specific patterns. 
 ## it assumes the same spatial distribution for all years
 ## it assumes that all time steps have the same spatial distribution
 ## the different polys will progress exactly the same than the neighbours along time

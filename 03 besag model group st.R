@@ -12,22 +12,17 @@
 ## note that you must run the script "00 prepare data.R" first
 
 ## besag model group:
+## response variable = CPUE, family=gamma
+## this model has spatio-temporal structure and separated temporal trend
+## spatio-temporal effect (polyID) is modelled as besag effect (AR1 time)
 ## (ID.area, model = "besag",replicate = time)
-## estás asumiendo que cada año tiene una distribución espacial diferente cuyas 
-## realizaciones vienen de la misma distribución. Por tanto, tendrás una posterior 
-## para cada punto en el espacio y en el tiempo 
+## temporal effect (psyearID) is modelled as a RW2 effect
 
-## Asumes que los puntos evolucionan de forma diferente en el tiempo. 
-## Asumes que no todos los instantes de tiempo tienen la misma distribución espacial. 
-
-## ID area: vector from 1 to n areas (each area repeated nyear times)
-## for the iid and besag effects we need to create an ID area column 
-
-
-## The f() function provides the group argument to set an index for the temporal
-##  structure of the data. This index will be used to define different types of 
-##  temporal dependence, whose definition will be done via the control.group 
-##  argument in the f() function.
+## assumptions:
+## we assume that eaach year has a different spatial distribution which
+## realizations come from the same distribution. 
+## it assumes that the different spatial points evolve differently along time
+## it assumes that not all time steps have the same spatial distribution
 
 # start here -------------------------------------------------------------------
 
