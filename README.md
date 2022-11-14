@@ -2,8 +2,12 @@
 Yellowfin Tuna NOAA spatial simulation experiment - R code to standardize lattice spatio-temporal CPUE data
 https://github.com/aaronmberger-nwfsc/Spatial-Assessment-Modeling-Workshop
 
-In this repository we standardize a CPUE from lattice (regular polygons) data via R-INLA. Three different models are used, 1) iid spatial model with time trend, 2) besag spatial model with time trend and 3) besag spatio-temporal interaction model.
+In this repository we standardize a CPUE from lattice (regular polygons) data via R-INLA. Three different models are applied:
 
-Predictions performed via inla.posterior.sample() function.
+01) iid spatial model with time trend
+02) besag spatial model with time trend 
+03) besag spatio-temporal interaction model.
 
-Code to create figure maps and model effects plotting included.
+Spatio-temporal predictions are performed via inla.posterior.sample() function.
+
+R code to create figure maps and model effects plotting included.
