@@ -6,7 +6,7 @@ In this repository we standardize a CPUE from lattice (regular polygons) data vi
 
 01) iid model with time trend
 02) besag spatial model with time trend 
-03) besag spatio-temporal interaction model.
+03) besag spatio-temporal interaction model
 
 Spatio-temporal predictions are performed via inla.posterior.sample() function.
 
