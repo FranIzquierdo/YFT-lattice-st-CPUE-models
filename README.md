@@ -4,7 +4,7 @@ https://github.com/aaronmberger-nwfsc/Spatial-Assessment-Modeling-Workshop
 
 In this repository we standardize a CPUE from lattice (regular polygons) data via R-INLA. Three different models are applied:
 
-01) iid spatial model with time trend
+01) iid model with time trend
 02) besag spatial model with time trend 
 03) besag spatio-temporal interaction model.
 
